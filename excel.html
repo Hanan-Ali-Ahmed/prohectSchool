@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Export HTML Table to Excel (XLSX)</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+</head>
+<body>
+
+<h2>Employee Data</h2>
+
+<table id="excelTable" border="1">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Country</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>John</td>
+            <td>30</td>
+            <td>USA</td>
+        </tr>
+        <tr>
+            <td>Mary</td>
+            <td>25</td>
+            <td>Canada</td>
+        </tr>
+        <tr>
+            <td>Ahmed</td>
+            <td>28</td>
+            <td>Egypt</td>
+        </tr>
+        <!-- Add more rows as needed -->
+    </tbody>
+</table>
+
+<button onclick="exportToExcel()">Export to Excel</button>
+
+<script>
+    function exportToExcel() {
+        const table = document.getElementById("excelTable");
+        const wb = XLSX.utils.table_to_book(table, { sheet: "Sheet1" });
+        XLSX.writeFile(wb, "exported_data.xlsx");
+    }
+</script>
+
+</body>
+</html>

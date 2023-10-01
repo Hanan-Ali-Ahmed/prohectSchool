@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Almarai', sans-serif;
+}
+body {
+    background: url("../img/new-Background3.jpg");
+    background-size: cover;
+}
+.card-body h1{
+    color: #b7b914 !important;
+    font-weight: bold;
+}
+/* تنسيق البوكس */
+.container-fluid {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+/* تنسيق الحقول */
+.container-fluid #box ,.container-fluid #page2 {
+    position: relative;
+    box-shadow: 20px 20px 50px rgb(0, 0, 0, 0.5);
+    border-radius: 15px;
+    font-weight: bold;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgb(255, 255, 255, 0.5);
+    border-left: 1px solid rgb(255, 255, 255, 0.5);
+    margin-top: 10px;
+    backdrop-filter: blur(5px);
+}
+.container-fluid div input , .container-fluid div select , .container-fluid div textarea{
+    width: 100%;
+    background: rgba(255, 255,255, 0.2);
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #FFF;
+}
+/* تنسيق الخيارات */
+select option {
+    background-color: #9cad6a27; 
+    color: #000000; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+/* تنسيق ازرار السابق والتالي */
+.before  , .after{ 
+    width: 29% !important;
+    font-size: 16px !important;
+    padding: 10px !important;
+    margin-top: 25px !important;
+    background: #b7b914 !important;
+    outline: none !important;
+    border: none !important;
+    border-radius: 30px !important;
+    color:#fff !important;
+    font-weight: bold;
+}
+.before:hover  , .after:hover{
+    box-shadow: 0 0 20px #d1d1d142,0 0 2px #d1d1d142 !important;
+}
+
+@media (min-width: 1400px) { 
+    .before  , .after{ 
+        width: 14% !important;
+        font-size: 20px !important;
+    }
+ }
+
+ #butts{
+    position: relative;
+    justify-content: flex-start;
+    font-weight: bold;
+    display: flex;
+    margin-left: 20px;
+
+} 
+.container-fluid div input[disabled],
+.container-fluid div select[disabled] {
+    background-color: #b5b7b5;
+    color: #fff;
+}
+h4{
+    font-size: 30px;
+}
+
+label {
+    font-size: 20px;
+}
+input::placeholder{
+    font-size: 20px;
+   
+}

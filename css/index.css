@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+/*body  تنسيق ال*/
+body {
+font-family: 'Almarai', sans-serif;
+position: relative;
+margin: 0;
+padding: 0;
+background-image: url("../img/new-Background3.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;  
+}
+/* form  تنسيق ال */
+.custom-form {
+font-family: 'Almarai', sans-serif;
+background: rgba(216, 159, 159, 0.1);
+width: 90%;
+height:520px;
+max-width: 480px;
+margin:  auto;
+
+padding: 20px;
+border-radius: 15px;
+box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+text-align: center;
+position: relative; 
+margin-top: 4% !important;
+margin-bottom: 4% !important;
+color: white;
+}
+/* تنسيق  حقل اختر المديرية  */
+select {
+    width: 76%;
+    height: 49px;
+    background: rgba(255, 255,255, 0.2);
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #FFF;
+    font-family: 'Almarai', sans-serif;
+    margin-top: 75px;
+    margin-bottom: 20px; 
+    }
+    select option {
+    
+    background-color: #9cad6a27; 
+    color: #000000; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+input[type="password"]  {
+width: 76%;
+height: 49px;
+background: rgba(255, 255,255, 0.2);
+border: none;
+outline: none;
+padding: 10px 20px;
+border-radius: 15px;
+border: 1px solid rgba(255, 255, 255, 0.5);
+border-right: 1px solid rgba(255, 255, 255, 0.2);
+border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+font-size: 16px;
+letter-spacing: 1px;
+color: #FFF;
+margin-top: 10px;
+margin-bottom: 20px; 
+}
+input[type="password"]::placeholder {
+color:#ffffff;
+text-align: right;
+font-size: 17px;
+}
+.custom-form h2 {
+margin-top:34px;
+}
+.custom-form button {
+width: 76%;
+font-size: 18px;
+padding: 10px;
+margin-top:10px;
+background: #b7b914!important;
+outline: none;
+border: none;
+border-radius: 15px;
+color:#fff;
+font-weight:bold;
+}
+.custom-form button:hover {
+box-shadow: 0 0 20px #d1d1d142,0 0 3px #d1d1d142;
+}
+
+.alertPassword{
+   
+    color: #ff7c7c !important;
+    font-size: 20px;
+    
+}
+
+.admin{
+    display: block;
+    margin-top: 20px;
+    color: #ffffffd4;
+    font-weight: 700;
+    text-decoration: underline;
+    cursor: pointer;
+}
+/* modal */
+.modal-content{
+    background: #d5d5de;
+}
+.modal-content label{
+    margin-right: 16px;
+    color:#504d81;
+    font-weight: bold;
+}
+.modal-content input{
+    width: 423px;
+    margin-right: 15px;
+    margin-top: 10px;
+    border-radius: 12px;
+}
+.modal-content button{
+    border-radius: 12px;
+    background-color: #b7b914 !important;
+    color: #fff;;
+}

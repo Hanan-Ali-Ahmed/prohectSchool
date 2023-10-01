@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Almarai', sans-serif;
+}
+body{
+    background: url('../img/new-Background3.jpg');
+     background-repeat: no-repeat
+}
+.card-body h1{
+    color: #b7b914 !important;
+    font-weight: bold;
+}
+
+.input-group input{
+    width:500px;
+    height:50px;
+    background: rgba(255, 255,255, 0.2);
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #FFF;
+    border-top-left-radius : 12px !important;
+    border-bottom-left-radius : 12px !important;
+}
+.input-group input::placeholder{
+    color:#fff
+}
+.btn {
+    width: 44px;
+    height: 46px;
+    color:#b7b914;
+    border-color: #c7c6c6;
+    border-radius: 10px ;
+}
+.tbl{
+    margin: auto;
+    text-align: center;
+    border-radius: 30px;
+    width: 79% ;
+    margin:auto ;
+    box-shadow: 20px 20px 50px rgba(62, 62, 62, 0.5) ;
+    border-radius: 15px ;
+    justify-content: center ;
+    align-items: center ;
+    backdrop-filter: blur(5px);
+}
+.tbl th{
+    color:#b7b914;
+    height: 80px;
+    
+}
+.tbl td{
+    color:#fff;
+    height: 50px;
+}
+.tbl td, .tbl th {
+    background: rgba(255, 255,255, 0.2);
+    outline: none;
+    padding: 10px 20px;
+    border-right: 1px solid rgba(255, 255, 255, 0.2); 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+table a{
+    color:#fff;
+}
+
+
+.input-group{
+    flex-wrap: nowrap ;
+    justify-content: center;
+}
+
+
+
+
+
